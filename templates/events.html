@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+</head>
+<body>
+    {% for event in event%}
+        {{ event.event_name }}
+        {{ event.category_name }}
+        {{ event.event_detail }}
+        {{ event.is_urgent }}
+        {{ event.due_date }}
+    {% endfor %}
+</body>
+</html>
