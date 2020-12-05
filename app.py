@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/get_events")
 def get_events():
     events = mongo.db.tasks.find()
-    return render_template("events.html, events=events")
+    return render_template("events.html", events=events)
 
 
 if __name__ == "__main__":
