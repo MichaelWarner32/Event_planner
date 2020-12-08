@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Planner</title>
-</head>
-<body>
+{% extends "main.html" %}
+{% block content %}
+
+    <h2>I'm extending the main template!</h2>
     {% for event in events %}
         {{ event.event_name }}
         {{ event.category_name }}
@@ -13,5 +9,5 @@
         {{ event.is_urgent }}
         {{ event.due_date }}
     {% endfor %}
-</body>
-</html>
+
+    {% endblock %}
