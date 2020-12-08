@@ -1,7 +1,6 @@
 {% extends "main.html" %}
 {% block content %}
 
-    <h2>I'm extending the main template!</h2>
     {% for event in events %}
         {{ event.event_name }}
         {{ event.category_name }}
